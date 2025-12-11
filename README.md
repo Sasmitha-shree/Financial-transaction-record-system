@@ -3,9 +3,13 @@
 FinancialTransactionSystem/
 
 │
+
 ├── src/
+
 │   └── com/
+
 │       └── wipro/
+
 │           └── ftrs/
 │               ├── entity/
 │               │   ├── Account.java
