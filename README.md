@@ -1,6 +1,7 @@
 # Financial-transaction-record-system
 
 FinancialTransactionSystem/
+
 │
 ├── src/
 │   └── com/
