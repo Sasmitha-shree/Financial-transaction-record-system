@@ -6,33 +6,33 @@ FinancialTransactionSystem/
 
 ├── src/
 
-│   └── com/wipro/ftrs/
+   └── com/wipro/ftrs/
 
-               ├── entity/
+         ├── entity/
 
-               │   ├── Account.java
+         │   ├── Account.java
 
-               │   └── TransactionRecord.java
+         │   └── TransactionRecord.java
 
-               │
+         │
 
-               ├── service/
+         ├── service/
 
-               │   └── FinancialTransactionService.java
+         │   └── FinancialTransactionService.java
 
-               │
+         │
 
-               ├── util/
+         ├── util/
 
-               │   ├── AccountNotFoundException.java
+         │   ├── AccountNotFoundException.java
 
-               │   ├── InsufficientBalanceException.java
+         │   ├── InsufficientBalanceException.java
 
-               │   └── InvalidTransactionException.java
+         │   └── InvalidTransactionException.java
 
-               │
+         │
 
-               └── main/
+         └── main/
 
-                   └── Main.java
+              └── Main.java
 
