@@ -54,5 +54,4 @@ public class TransactionRecord {
 	public void setRemarks(String remarks) {
 		this.remarks = remarks;
 	}
-	
 }
