@@ -13,23 +13,22 @@ public class Main {
 		ArrayList<TransactionRecord> transactions = new ArrayList<>();
 		FinancialTransactionService service = new FinancialTransactionService(accounts, transactions);
 		try {
-		// Deposit
-		service.deposit("A001", 1500, "Salary credit");
-		// Withdraw
-		service.withdraw("A001", 500, "ATM withdrawal");
-		// Transfer
-		service.transfer("A001", "A002", 2000, "Online transfer to Neha");
-		// History
-		System.out.println("--- Transaction History for A001 ---");
-		for (TransactionRecord tr : service.getTransactionHistory("A001")) {
-		System.out.println(tr.getType() + " - " + tr.getAmount());
+			// Deposit
+			service.deposit("A001", 1500, "Salary credit");
+			// Withdraw
+			service.withdraw("A001", 500, "ATM withdrawal");
+			// Transfer
+			service.transfer("A001", "A002", 2000, "Online transfer to Neha");
+			// History
+			System.out.println("--- Transaction History for A001 ---");
+			for (TransactionRecord tr : service.getTransactionHistory("A001")) {
+				System.out.println(tr.getType() + " - " + tr.getAmount());
+			}
+			// Summary
+			System.out.println("\n--- Account Summary ---");
+			System.out.println(service.generateAccountSummary("A001"));
+			} catch (Exception ex) {
+				System.out.println(ex);
+			}
 		}
-		// Summary
-		System.out.println("\n--- Account Summary ---");
-		System.out.println(service.generateAccountSummary("A001"));
-		} catch (Exception ex) {
-		System.out.println(ex);
-		}
-		}
-
 }
